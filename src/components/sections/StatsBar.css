@@ -1,0 +1,66 @@
+.stats-bar {
+  background: #f8f7ff;
+  padding: 60px 24px;
+  border-top: 1px solid #e8e6f5;
+  border-bottom: 1px solid #e8e6f5;
+}
+
+.stats-bar__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.stats-bar__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 24px 16px;
+  position: relative;
+}
+
+.stats-bar__card::after {
+  content: '';
+  position: absolute;
+  right: 0; top: 25%;
+  height: 50%; width: 1px;
+  background: #e8e6f5;
+}
+.stats-bar__card:last-child::after { display: none; }
+
+.stats-bar__number {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: #6254e7;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.stats-bar__label {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #3b3663;
+  line-height: 1.4;
+}
+
+.stats-bar__sub {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #9896b0;
+}
+
+@media (max-width: 768px) {
+  .stats-bar__inner { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .stats-bar__card::after { display: none; }
+  .stats-bar__number { font-size: 30px; }
+}
+@media (max-width: 480px) {
+  .stats-bar__inner { grid-template-columns: 1fr; }
+}

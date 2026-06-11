@@ -1,0 +1,59 @@
+.metrics-funnel {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metrics-funnel__bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.metrics-funnel__stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.metrics-funnel__bar-wrap {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.metrics-funnel__bar {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  transition: height 0.5s ease;
+}
+
+.metrics-funnel__pct {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: -0.01em;
+}
+
+.metrics-funnel__label {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: #696687;
+  text-align: center;
+}
+
+.metrics-funnel__arrow {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 10%;
+}
+
+.metrics-funnel__chevron {
+  font-size: 18px;
+  color: #e8e6f5;
+}

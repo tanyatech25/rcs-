@@ -1,0 +1,88 @@
+.pricing {
+  background: #f8f7ff;
+  padding: 96px 24px;
+}
+
+.pricing__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.pricing__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pricing__eyebrow {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: #6254e7;
+  text-transform: uppercase;
+}
+
+.pricing__title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: #3b3663;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.pricing__sub {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #696687;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pricing__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+/* Cost comparison callout */
+.pricing__callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: rgba(98, 84, 231, 0.06);
+  border: 1px solid rgba(98, 84, 231, 0.18);
+  border-radius: 12px;
+  padding: 20px 24px;
+}
+
+.pricing__callout p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #3b3663;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.pricing__callout-num {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  color: #34a853;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .pricing__grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .pricing__title { font-size: 26px; }
+  .pricing__sub { font-size: 15px; }
+}

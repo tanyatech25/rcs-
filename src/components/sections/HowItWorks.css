@@ -1,0 +1,126 @@
+.how-it-works {
+  background: #ffffff;
+  padding: 96px 24px;
+}
+
+.how-it-works__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.how-it-works__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.how-it-works__eyebrow {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  color: #6254e7;
+  text-transform: uppercase;
+}
+
+.how-it-works__title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: #3b3663;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* Steps */
+.how-it-works__steps-wrapper { position: relative; }
+
+.how-it-works__line {
+  position: absolute;
+  top: 28px;
+  left: calc(12.5% - 1px);
+  right: calc(12.5% - 1px);
+  height: 2px;
+  background: linear-gradient(90deg, #6254e7, #9b94e8);
+  transform-origin: left center;
+  z-index: 0;
+}
+
+.how-it-works__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  position: relative;
+  z-index: 1;
+}
+
+.how-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.how-step__circle {
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  background: #6254e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(98, 84, 231, 0.30);
+  position: relative;
+}
+
+.how-step__circle::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  background: rgba(98, 84, 231, 0.10);
+}
+
+.how-step__circle span {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.how-step__title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  color: #3b3663;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.how-step__desc {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #696687;
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .how-it-works__steps { grid-template-columns: repeat(2, 1fr); }
+  .how-it-works__line { display: none; }
+  .how-it-works__title { font-size: 26px; }
+}
+
+@media (max-width: 520px) {
+  .how-it-works__steps { grid-template-columns: 1fr; }
+  .how-step { flex-direction: row; text-align: left; align-items: flex-start; }
+  .how-step__circle { flex-shrink: 0; }
+}

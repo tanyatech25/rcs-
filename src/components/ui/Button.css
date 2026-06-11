@@ -1,0 +1,93 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  text-decoration: none;
+  white-space: nowrap;
+  border: none;
+  outline: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid #1A6BF5;
+  outline-offset: 3px;
+}
+
+/* Sizes */
+.btn--md {
+  height: 48px;
+  padding: 0 24px;
+  font-size: 15px;
+}
+
+.btn--sm {
+  height: 38px;
+  padding: 0 18px;
+  font-size: 13px;
+}
+
+.btn--lg {
+  height: 54px;
+  padding: 0 32px;
+  font-size: 16px;
+}
+
+/* Variants */
+.btn--primary {
+  background: #1A6BF5;
+  color: #fff;
+}
+
+.btn--primary:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(26, 107, 245, 0.35);
+  background: #0F56D5;
+}
+
+.btn--secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+}
+
+.btn--secondary:hover {
+  transform: scale(1.04);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: #1A6BF5;
+  border: 1px solid #1A6BF5;
+}
+
+.btn--ghost:hover {
+  transform: scale(1.04);
+  background: rgba(26, 107, 245, 0.06);
+}
+
+.btn--ghost-dark {
+  background: transparent;
+  color: #1A6BF5;
+  border: 1px solid #E2E8F0;
+}
+
+.btn--ghost-dark:hover {
+  transform: scale(1.04);
+  background: rgba(26, 107, 245, 0.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+  .btn:hover {
+    transform: none;
+  }
+}

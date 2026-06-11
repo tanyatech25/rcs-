@@ -1,0 +1,146 @@
+.pricing-card {
+  background: #ffffff;
+  border: 1px solid #e8e6f5;
+  border-radius: 12px;
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  transition: box-shadow 0.2s ease;
+}
+.pricing-card:hover {
+  box-shadow: 0 8px 32px rgba(98, 84, 231, 0.12);
+}
+
+.pricing-card--popular {
+  border: 2px solid #6254e7;
+  background: #ffffff;
+}
+
+.pricing-card__badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #6254e7;
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 16px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+
+.pricing-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pricing-card__name {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: #3b3663;
+  margin: 0;
+}
+
+.pricing-card__desc {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #696687;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.pricing-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.pricing-card__amount {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  color: #3b3663;
+  letter-spacing: -0.02em;
+}
+
+.pricing-card__unit {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #696687;
+}
+
+.pricing-card__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.pricing-card__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #696687;
+  line-height: 1.5;
+}
+
+.pricing-card__check {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.pricing-card__cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 50px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  cursor: pointer;
+}
+.pricing-card__cta:focus-visible { outline: 2px solid #6254e7; outline-offset: 3px; }
+
+.pricing-card__cta--primary {
+  background: #6254e7;
+  color: #fff;
+}
+.pricing-card__cta--primary:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(98, 84, 231, 0.35);
+  background: #4e42c9;
+}
+
+.pricing-card__cta--ghost {
+  background: transparent;
+  color: #6254e7;
+  border: 2px solid #6254e7;
+}
+.pricing-card__cta--ghost:hover {
+  transform: scale(1.04);
+  background: rgba(98, 84, 231, 0.06);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pricing-card__cta { transition: none; }
+  .pricing-card__cta:hover { transform: none; }
+}
