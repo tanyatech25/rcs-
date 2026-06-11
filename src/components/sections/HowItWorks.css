@@ -23,7 +23,7 @@
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.12em;
-  color: #6254e7;
+  color: #3b3663;
   text-transform: uppercase;
 }
 
@@ -45,7 +45,7 @@
   left: calc(12.5% - 1px);
   right: calc(12.5% - 1px);
   height: 2px;
-  background: linear-gradient(90deg, #6254e7, #9b94e8);
+  background: linear-gradient(90deg, #ECD7D4, #E8DAF7);
   transform-origin: left center;
   z-index: 0;
 }
@@ -69,12 +69,12 @@
 .how-step__circle {
   width: 56px; height: 56px;
   border-radius: 50%;
-  background: #6254e7;
+  background: #3b3663;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 4px 16px rgba(98, 84, 231, 0.30);
+  box-shadow: 0 4px 16px rgba(59, 54, 99, 0.30);
   position: relative;
 }
 
@@ -83,7 +83,7 @@
   position: absolute;
   inset: -5px;
   border-radius: 50%;
-  background: rgba(98, 84, 231, 0.10);
+  background: rgba(59, 54, 99, 0.10);
 }
 
 .how-step__circle span {
@@ -124,3 +124,4 @@
   .how-step { flex-direction: row; text-align: left; align-items: flex-start; }
   .how-step__circle { flex-shrink: 0; }
 }
+

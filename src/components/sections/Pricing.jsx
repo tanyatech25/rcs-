@@ -40,3 +40,4 @@ export function Pricing() {
 }
 
 export default Pricing;
+

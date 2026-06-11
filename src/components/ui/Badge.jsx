@@ -8,3 +8,4 @@ export function Badge({ label, variant = 'teal', className = '' }) {
 }
 
 export default Badge;
+

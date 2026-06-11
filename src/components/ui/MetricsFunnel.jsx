@@ -2,9 +2,9 @@ import React from 'react';
 import './MetricsFunnel.css';
 
 const stages = [
-  { label: 'Sent', pct: 100, color: '#6254e7' },
+  { label: 'Sent', pct: 100, color: '#3b3663' },
   { label: 'Delivered', pct: 98, color: '#7b6fea' },
-  { label: 'Read', pct: 45, color: '#9b94e8' },
+  { label: 'Read', pct: 45, color: '#E8DAF7' },
   { label: 'Clicked', pct: 22, color: '#b5b0ef' },
   { label: 'Responded', pct: 14, color: '#34a853' },
 ];
@@ -45,3 +45,4 @@ export function MetricsFunnel() {
 }
 
 export default MetricsFunnel;
+

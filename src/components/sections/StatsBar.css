@@ -1,5 +1,5 @@
 .stats-bar {
-  background: #f8f7ff;
+  background: #FFFCF4;
   padding: 60px 24px;
   border-top: 1px solid #e8e6f5;
   border-bottom: 1px solid #e8e6f5;
@@ -36,7 +36,7 @@
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
   font-size: 40px;
-  color: #6254e7;
+  color: #3b3663;
   letter-spacing: -0.02em;
   line-height: 1;
 }
@@ -64,3 +64,4 @@
 @media (max-width: 480px) {
   .stats-bar__inner { grid-template-columns: 1fr; }
 }
+

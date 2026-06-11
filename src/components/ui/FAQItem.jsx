@@ -49,3 +49,4 @@ export function FAQItem({ faq, index = 0 }) {
 }
 
 export default FAQItem;
+

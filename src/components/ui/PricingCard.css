@@ -10,11 +10,11 @@
   transition: box-shadow 0.2s ease;
 }
 .pricing-card:hover {
-  box-shadow: 0 8px 32px rgba(98, 84, 231, 0.12);
+  box-shadow: 0 8px 32px rgba(59, 54, 99, 0.12);
 }
 
 .pricing-card--popular {
-  border: 2px solid #6254e7;
+  border: 2px solid #3b3663;
   background: #ffffff;
 }
 
@@ -23,7 +23,7 @@
   top: -14px;
   left: 50%;
   transform: translateX(-50%);
-  background: #6254e7;
+  background: #3b3663;
   color: #fff;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
@@ -118,29 +118,30 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
   cursor: pointer;
 }
-.pricing-card__cta:focus-visible { outline: 2px solid #6254e7; outline-offset: 3px; }
+.pricing-card__cta:focus-visible { outline: 2px solid #3b3663; outline-offset: 3px; }
 
 .pricing-card__cta--primary {
-  background: #6254e7;
+  background: #3b3663;
   color: #fff;
 }
 .pricing-card__cta--primary:hover {
   transform: scale(1.04);
-  box-shadow: 0 8px 24px rgba(98, 84, 231, 0.35);
-  background: #4e42c9;
+  box-shadow: 0 8px 24px rgba(59, 54, 99, 0.35);
+  background: #231e42;
 }
 
 .pricing-card__cta--ghost {
   background: transparent;
-  color: #6254e7;
-  border: 2px solid #6254e7;
+  color: #3b3663;
+  border: 2px solid #3b3663;
 }
 .pricing-card__cta--ghost:hover {
   transform: scale(1.04);
-  background: rgba(98, 84, 231, 0.06);
+  background: rgba(59, 54, 99, 0.06);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .pricing-card__cta { transition: none; }
   .pricing-card__cta:hover { transform: none; }
 }
+

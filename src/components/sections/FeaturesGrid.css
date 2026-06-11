@@ -1,5 +1,5 @@
 .features-grid {
-  background: #f8f7ff;
+  background: #FFFCF4;
   padding: 96px 24px;
 }
 
@@ -22,7 +22,7 @@
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 0.10em;
-  color: #6254e7;
+  color: #3b3663;
   text-transform: uppercase;
 }
 
@@ -63,7 +63,7 @@
   height: 100%;
 }
 .feature-card--wide-inner:hover {
-  box-shadow: 0 8px 32px rgba(98, 84, 231, 0.12);
+  box-shadow: 0 8px 32px rgba(59, 54, 99, 0.12);
 }
 .feature-card--wide-inner:hover .feature-card__gradient-line { opacity: 1; }
 
@@ -81,3 +81,4 @@
   .features-grid__grid { grid-template-columns: 1fr; }
   .features-grid__wide-card { grid-column: span 1; }
 }
+

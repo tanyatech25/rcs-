@@ -61,3 +61,4 @@ export function PricingCard({ tier, index = 0 }) {
 }
 
 export default PricingCard;
+

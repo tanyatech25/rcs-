@@ -31,7 +31,7 @@ export function Navbar() {
         <div className="navbar__inner">
           {/* Logo */}
           <a href="/" className="navbar__logo" aria-label="LeminAi RCS home">
-            <span className="navbar__logo-text">LeminAi</span>
+            <img src="/1.png" alt="LeminAi" className="navbar__logo-image" />
             <span className="navbar__rcs-badge" aria-label="RCS product">RCS</span>
           </a>
 
@@ -104,3 +104,4 @@ export function Navbar() {
 }
 
 export default Navbar;
+

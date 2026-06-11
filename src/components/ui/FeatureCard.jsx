@@ -38,3 +38,4 @@ export function FeatureCard({ feature, index = 0 }) {
 }
 
 export default FeatureCard;
+

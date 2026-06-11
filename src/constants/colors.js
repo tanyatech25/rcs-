@@ -1,9 +1,14 @@
-// LeminAi Brand Color Palette — Matching leminai.com exactly
+// LeminAi Brand Color Palette — Yellow / Gradient Theme
 export const colors = {
-  // Primary (purple) — #6254e7
-  primary: '#6254e7',
-  primaryDark: '#4e42c9',
-  primaryLight: 'rgba(98, 84, 231, 0.10)',
+  // Gradient stops
+  gradYellow: '#FFFCF4',
+  gradPeach: '#ECD7D4',
+  gradLilac: '#E8DAF7',
+
+  // Primary
+  primary: '#3b3663',
+  primaryDark: '#231e42',
+  primaryLight: 'rgba(59, 54, 99, 0.10)',
 
   // Headings
   heading: '#3b3663',
@@ -13,8 +18,8 @@ export const colors = {
 
   // Backgrounds
   white: '#ffffff',
-  bgLight: '#f8f7ff',
-  bgSection: '#f4f3fc',
+  bgLight: '#FFFCF4',
+  bgSection: '#FFFCF4',
 
   // Borders
   border: '#e8e6f5',

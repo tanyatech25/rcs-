@@ -37,3 +37,4 @@ export function TestimonialCard({ testimonial, index = 0 }) {
 }
 
 export default TestimonialCard;
+

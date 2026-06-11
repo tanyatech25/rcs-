@@ -41,7 +41,7 @@
 }
 
 .trust-bar__pill {
-  background: #f8f7ff;
+  background: #FFFCF4;
   border: 1px solid #e8e6f5;
   color: #696687;
   font-family: 'Rubik', sans-serif;
@@ -56,3 +56,4 @@
 @media (prefers-reduced-motion: reduce) {
   .trust-bar__marquee { animation: none; flex-wrap: wrap; justify-content: center; }
 }
+

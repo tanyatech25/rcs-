@@ -16,7 +16,7 @@
 }
 
 .faq-item__trigger:focus-visible {
-  outline: 2px solid #6254e7;
+  outline: 2px solid #3b3663;
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -34,7 +34,7 @@
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 24px;
-  color: #6254e7;
+  color: #3b3663;
   line-height: 1;
   flex-shrink: 0;
   display: block;
@@ -56,3 +56,4 @@
   line-height: 1.7;
   margin: 0;
 }
+
